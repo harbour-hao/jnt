@@ -1,0 +1,2 @@
+/* pages/electric/electric.wxss */
+@import "/pages/wxParse/wxParse.wxss";

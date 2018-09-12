@@ -1,0 +1,22 @@
+/**index.wxss**/  
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.weui-grids {
+  border: 0;
+}
+.weui-grid {
+  border-right: 1rpx solid #efeff4;
+  border-bottom: 1rpx solid #efeff4;
+}
+
+.weui-search-bar {
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.weui-footer {
+  margin-top: 20px;
+}

@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="top">
+  <view wx:for="{{['一','二','三','四','五','六','日']}}" class="top-text">周{{item}}</view>
+</view>
+<scroll-view scroll-y="true" class="scroll" >
+  <view style="height:1600rpx;width:730rpx;display:flex;">
+    <view style="background-color:rgb(244, 248, 251);color:rgb(61, 135, 150)">
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14]}}" class="left">
+        {{item}}
+      </view>
+    </view>
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14]}}">
+      <view style="width:750rpx;margin-top:{{(index+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid {{index==3?'red':'lightgray'}};">
+      </view>
+    </view>
+
+    <!--课表-->
+    <view wx:for="{{wlist}}">
+      <view class="flex-item kcb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.xqj-1)*100}}rpx;margin-top:{{(item.skjc-1)*100+5}}rpx;height:{{item.skcd*100-5}}rpx;background-color:{{colorArrays[index%9]}}">
+        <view class="smalltext" >{{item.kcmc}}</view>
+      </view>
+    </view>
+  <view class="section">
+  <!-- <view class="section__title">请选择添加课程</view> -->
+  
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+    <text>添加课程</text>
+      <!-- 当前选择：日期：{{multiArray[0][multiIndex[0]]}}，开始上课时间：{{multiArray[1][multiIndex[1]]}}，持续节数：{{multiArray[2][multiIndex[2]]}} -->
+    </view>
+  </picker>
+       <view class="inputView"> 
+  
+  <input class="inputText"  placeholder="请填入课程与课室" bindinput="Input" /> 
+ </view>   
+    
+ 
+  <!-- <view class="section__title">普通选择器</view> -->
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+    <text class="text-all">删除课程</text>
+      <!-- 当前选择：{{array[index]}} -->
+    </view>
+  </picker>
+
+</view>
+</view>
+
+
+    
+</scroll-view>
+  
+   

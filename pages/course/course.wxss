@@ -1,0 +1,74 @@
+/**index.wxss**/
+
+.flex-item {
+  width: 95rpx;
+  height: 100px;
+}
+
+.kcb-item {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.smalltext {
+  font-size: 8pt;
+  color: #fff;
+  padding-left: 2px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  min-height: 60rpx;
+  padding-left: 50rpx;
+  background-color:rgb(244, 248, 251);
+  color: rgb(61, 135, 150);
+}
+
+.top-text {
+  width: 100rpx;
+  height: 50rpx;
+  font-size: 10pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.scroll {
+  height: 100%;
+  z-index: 101;
+  position: fixed;
+}
+
+.left {
+  width: 50rpx;
+  height: 100rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.section{
+  margin-top: 695px;
+  border-left: limegreen solid 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+   
+  }
+  .text-all{
+  color: red;
+  font-size: 15px;
+}
+.inputText { 
+margin-right: 22px; 
+color: #cccccc; 
+font-size: 14px
+} 

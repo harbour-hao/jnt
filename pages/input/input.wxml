@@ -1,0 +1,44 @@
+<view class="container"> 
+ <view class="login-icon"> 
+ <image class="login-img" src="../../images/account/about.svg" mode='center'></image> 
+ </view> 
+ <view class="login-from"> 
+  
+<!--姓名-->
+ <view class="inputView"> 
+  <image class="nameImage" src="../../images/tabbar/account_active.png"></image> 
+  <label class="loginLab">姓名</label> 
+  <input class="inputText" placeholder="{{name}}" bindinput="nameInput" /> 
+ </view> 
+ <!--账号-->
+ <view class="inputView"> 
+  <image class="nameImage" src="../../images/tabbar/account_active.png"></image> 
+  <label class="loginLab">学号</label> 
+  <input class="inputText" placeholder="{{phone}}" bindinput="phoneInput" /> 
+ </view> 
+  
+ <!--密码-->
+ <view class="inputView"> 
+  <image class="keyImage" src="../../images/account/feedback.svg"></image> 
+  <label class="loginLab">密码</label> 
+  <input class="inputText"  placeholder="{{password}}" bindinput="passwordInput" /> 
+ </view> 
+  <!--身份证-->
+ <view class="inputView"> 
+  <image class="keyImage" src="../../images/account/binding.svg"></image> 
+  <label class="loginLab">身份证号码</label> 
+  <input class="inputText"  placeholder="{{idcard}}"bindinput="idcardInput" type='idcard' /> 
+ </view> 
+
+<!--宿舍-->
+ <view class="inputView"> 
+  <image class="keyImage" src="../../images/account/department.svg"></image> 
+  <label class="loginLab">宿舍</label> 
+  <input class="inputText" placeholder="{{room}}" bindinput="roomInput" /> 
+ </view> 
+ <!--按钮-->
+ <view class="loginBtnView"> 
+  <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">修改</button> 
+ </view> 
+ </view> 
+</view>

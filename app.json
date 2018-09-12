@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/course/course",
+    "pages/logs/logs",
+    "pages/account/account",
+    "pages/pe/pe",
+    "pages/electric/electric",
+    "pages/jwxt-course/jwxt-course",
+    "pages/input/input",
+    "pages/countdown/countdown"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#027dc1",
+    "navigationBarTitleText": "暨南通（内测）",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "f8f8f8",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#027dc1",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/index.png",
+        "selectedIconPath": "images/tabbar/index_active.png"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "课程表",
+        "iconPath": "images/tabbar/course.png",
+        "selectedIconPath": "images/tabbar/course_active.png"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "text": "我的",
+        "iconPath": "images/tabbar/account.png",
+        "selectedIconPath": "images/tabbar/account_active.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
